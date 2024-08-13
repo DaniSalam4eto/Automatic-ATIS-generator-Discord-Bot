@@ -1,21 +1,21 @@
-# ATIS Bot for Discord
+# Automatic ATIS Generator Discord Bot
 
-ATIS Bot is a Discord bot built for aviation enthusiasts and communities to broadcast Automated Terminal Information Service (ATIS) messages within a Discord server. This bot provides functionalities to set, update, and stop ATIS broadcasts in specific channels, with access restricted to users with a designated role.
+The Automatic ATIS Generator is a Discord bot built to broadcast Automated Terminal Information Service (ATIS) messages within Discord channels, designed specifically for aviation communities and virtual flight simulation groups.
 
 ## Features
 
-- **Set ATIS Information**: Start broadcasting ATIS details including airport code, ATIS letter, winds, transition level, visibility, and active runway.
-- **Update ATIS Information**: Modify any existing ATIS broadcast details.
-- **Stop ATIS Broadcast**: Halt the ATIS broadcast in a specific channel.
-- **Automated Broadcasting**: Broadcasts ATIS information every 5 minutes.
-- **Role-Based Security**: Only users with the appropriate role can manage ATIS broadcasts.
+- **Set ATIS Information**: Start broadcasting ATIS details, such as airport code, ATIS letter, winds, transition level, visibility, and active runway.
+- **Update ATIS Information**: Modify the existing ATIS broadcast without stopping the current session.
+- **Stop ATIS Broadcast**: Easily stop the ATIS broadcast for a specific channel.
+- **Automated Broadcasting**: Broadcast ATIS information every 5 minutes automatically.
+- **Role-Based Access**: Ensure that only users with the designated role can manage the ATIS broadcasts.
 
 ## Installation
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/atis-bot.git
-    cd atis-bot
+    git clone https://github.com/yourusername/Automatic-ATIS-generator-Discord-Bot.git
+    cd Automatic-ATIS-generator-Discord-Bot
     ```
 
 2. Install the required dependencies:
@@ -23,7 +23,7 @@ ATIS Bot is a Discord bot built for aviation enthusiasts and communities to broa
     pip install discord.py
     ```
 
-3. Set your bot token and allowed role ID in the code:
+3. Set your bot token and allowed role ID in `main.py`:
     ```python
     bot.run('YOUR_BOT_TOKEN')
     ALLOWED_ROLE_ID = 123456789  # Replace with your actual role ID
@@ -31,7 +31,7 @@ ATIS Bot is a Discord bot built for aviation enthusiasts and communities to broa
 
 4. Run the bot:
     ```sh
-    python bot.py
+    python main.py
     ```
 
 ## Commands
@@ -53,14 +53,7 @@ ATIS Bot is a Discord bot built for aviation enthusiasts and communities to broa
 - **/stopatis**
   - Stop the ATIS broadcast for the current channel.
 
-## Contributing
 
-Contributions are welcome! Please fork the repository and submit a pull request for review.
 
-## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-## Acknowledgements
-
-- [discord.py](https://discordpy.readthedocs.io/) for the powerful API that makes this bot possible.
